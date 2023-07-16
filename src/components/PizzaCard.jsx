@@ -14,7 +14,7 @@ const PizzaCard = ({ pizza }) => {
   };
 
 const agregarAlCarrito = (id) => {
-    AñadirCarrito1(id);
+    formatCurrency(AñadirCarrito1);
   };
 
   return (
