@@ -40,7 +40,7 @@ const agregarAlCarrito = (id) => {
           >
             Especificaciones
           </Button>
-          <Button
+          <Button className="bgbtnAgre"
           
             variant="warning"
             onClick={() => agregarAlCarrito(pizza.id)}
