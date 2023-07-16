@@ -1,0 +1,30 @@
+li{
+    list-style:armenian;
+    margin: 8px;
+}
+
+.BtnnContainer{
+    display: flex;
+}
+
+.BtnContainer:hover{
+    transform: scale(1.1);
+}
+
+
+.CardContainer{
+    align-items: center;
+    display: flex;
+
+}
+
+.CardTitle{
+    text-align: center;
+    font-size: 30px;
+}
+
+.inghover{
+    transition: transform 0.4s ease;
+    font-size: 30px;
+}
+

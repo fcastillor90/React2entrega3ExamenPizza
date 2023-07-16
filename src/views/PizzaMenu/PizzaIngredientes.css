@@ -1,0 +1,26 @@
+.cardContainer{
+    display: flex;
+    align-items: center;
+    width: 85%;
+}
+
+.btnHome{
+    text-decoration: none;
+    color: rgb(185, 185, 185);
+}
+
+.btnStore{
+    text-decoration: none;
+    color: rgb(53, 41, 41);
+}
+
+.btnContainer{
+    display: flex;
+    justify-content: space-evenly; 
+    transition: transform 0.4s ease;
+    
+}
+
+.btnContainer:hover{
+    transform: scale(1.1);
+}
