@@ -17,10 +17,4 @@
 .btnContainer{
     display: flex;
     justify-content: space-evenly; 
-    transition: transform 0.4s ease;
-    
-}
-
-.btnContainer:hover{
-    transform: scale(1.1);
 }

@@ -5,7 +5,7 @@ import "../Carrito/Carrito.css"
 import { Button } from "react-bootstrap";
 
 const Carrito = () => {
-  const { carrito, pizza, total, formatCurrency } = useContext(Contexto);
+  const { eshop, pizza, total, formatCurrency } = useContext(Contexto);
 
   return (
     <div className="table-container">
@@ -19,9 +19,9 @@ const Carrito = () => {
           </tr>
         </thead>
         <tbody>
-          {carrito.map((p) => {
+          {eshop.map((p) => {
             const newPizza = pizza.find((pz) => pz.id === p.id);
-            const totalPrecio = newPizza.price * p.cantidad;
+            const totalPrice = newPizza.price * p.cantidad;
 
             return (
               <tr key={p.id}>
@@ -30,25 +30,23 @@ const Carrito = () => {
                     <img
                       src={newPizza.img}
                       alt={newPizza.name}
-                      width="70"
-                      className="mr-3"
                     />
                     <span> 🍕 {newPizza.name}</span>
                   </div>
                 </td>
                 <td>{p.cantidad}</td>
                 <td>{formatCurrency(newPizza.price)}</td>
-                <td>{formatCurrency(totalPrecio)}.-</td>
+                <td>{formatCurrency(totalPrice)}.-</td>
               </tr>
             );
           })}
         </tbody>
         <tfoot>
           <tr>
-            <td colSpan="3" className="text-right fw-bold">
+            <td >
               Total:
             </td>
-            <td className="fw-bold d-flex justify-content-between">
+            <td >
               {formatCurrency(total)}.-
               <Button variant="success">Comprar 💸</Button>
             </td>

@@ -32,6 +32,14 @@ a{
 
 }
 
+.carrito{
+background-color: blanchedalmond;
+}
+
+.titulo{
+    background-color: aquamarine;
+}
+
 .ContNav:hover {
     color: rgb(255, 0, 0);
 

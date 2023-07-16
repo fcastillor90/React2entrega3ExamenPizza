@@ -9,7 +9,7 @@ const Navbar1 = () => {
     
     return (
         <div>
-            <Navbar className="bg-blue">
+            <Navbar className="bg-dark">
                 <Container>
                 <Navbar.Brand>
                     <Link className to='/'>       
@@ -18,7 +18,7 @@ const Navbar1 = () => {
                     <p>🍕¡Tenemos las mejores pizzas que podrás encontrar!🍕</p>
         </div></Link>
                 </Navbar.Brand>
-                <NavLink className to='/carrito'>🛒🍕Total: {formatCurrency(total)}🍕</NavLink>
+                <NavLink className to='/carrito titulo'>🛒🍕Total: {formatCurrency(total)}🍕 </NavLink>
                 </Container>                   
             </Navbar>
         </div>
